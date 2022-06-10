@@ -5,11 +5,10 @@ public class Dwarf implements Observer {
 
     public void update(){
         if(this.toy == null) {
-            System.out.println("No topic set");
             return;
         }
         String lastToy = this.toy.getUpdate();
-        System.out.println("I received order for: " + lastToy);
+        System.out.println("Dwarf: We received order for: " + lastToy);
     }
 
     @Override

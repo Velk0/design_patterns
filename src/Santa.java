@@ -39,7 +39,6 @@ public class Santa {
 
     public void makeACommand() {
         if(this.command == null) {
-            System.out.println("No command given");
             return;
         }
         this.command.execute();

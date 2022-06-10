@@ -1,5 +1,8 @@
-public class Bike {
+public class Bike extends WorkProduct {
 
-    private int Bikes;
-
+    @Override
+    public void prepare() {
+        System.out.println("Dwarfs: Building...");
+        System.out.println("Dwarfs: The bike is ready!");
+    }
 }

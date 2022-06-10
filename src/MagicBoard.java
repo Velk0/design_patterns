@@ -6,12 +6,12 @@ public class MagicBoard implements Observable {
     private boolean WeNeedDoll;
 
     public void MakeABike(){
-        //System.out.println("We need to make a bike");
+        System.out.println("Santa: We need to make a bike");
         this.WeNeedBike = true;
     }
 
     public void MakeADoll(){
-        //System.out.println("We need to make a doll");
+        System.out.println("Santa: We need to make a doll");
         this.WeNeedDoll = true;
     }
 
@@ -28,12 +28,6 @@ public class MagicBoard implements Observable {
     public void subscribe(Observer observer) {
         this.observers.add(observer);
         observer.setToy(this);
-    }
-
-    @Override
-    public void unsubscribe(Observer observer) {
-        this.observers.remove(observer);
-        observer.setToy(null);
     }
 
     @Override
