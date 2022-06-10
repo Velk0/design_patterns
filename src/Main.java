@@ -18,5 +18,10 @@ public class Main {
             santa.makeACommand();
         }
 
+        Observer obs1 = new Dwarf();
+        magicBoard.subscribe(obs1);
+        magicBoard.setToy(ToyToMake);
+        magicBoard.unsubscribe(obs1);
+
     }
 }
